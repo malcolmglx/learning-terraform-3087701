@@ -14,7 +14,7 @@ data "aws_ami" "app_ami" {
   owners = [var.ami_filter.owner]
 }
 
-module "vpc" {
+module "blog_vpc" {
   source = "terraform-aws-modules/vpc/aws"
 
   name = var.Environment.name
